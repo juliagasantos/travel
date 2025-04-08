@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Lexend", sans-serif;
+  ;
+}
+
+:root {
+  --clr-white: #ffffff;
+  --clr-white-transparent: #ffffff40;
+}
+
+body {
+  background-color: black;
+}
+
+/*#region header*/
+
+header {
+  & nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 3em;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .travel {
+        width: 30px;
+      }
+
+      .travelers {
+        width: 80px;
+      }
+    }
+
+    .menu {
+      & a {
+        color: var(--clr-white);
+        padding: 0 1em;
+      }
+    }
+
+    .search {
+      display: flex;
+      align-items: center;
+      color: var(--clr-white);
+    }
+  }
+
+  .line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2px;
+    background: var(--clr-white-transparent);
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/*#endregion header*/
+
+/*#region home */
+
+#home{
+  .textHomeContainer{
+    & ul{
+      & li{
+        
+      }
+    }
+  }
+}
+
+/*#endregion home */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
