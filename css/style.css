@@ -5,7 +5,7 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Lexend", sans-serif;
-  ;
+  font-weight: 300;
 }
 
 :root {
@@ -134,6 +134,7 @@ header {
               gap: 0.5em;
               display: flex;
               align-items: center;
+              font-weight: 600;
             }
 
             .textDescription {
@@ -169,6 +170,7 @@ header {
               gap: 0.5em;
               display: flex;
               align-items: center;
+              font-weight: 600;
             }
 
             .textDescription {
@@ -203,6 +205,7 @@ header {
               gap: 0.5em;
               display: flex;
               align-items: center;
+              font-weight: 600;
             }
 
             .textDescription {
@@ -227,3 +230,120 @@ header {
 }
 
 /*#endregion home */
+
+/*#region tours*/
+
+#tours {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  .textTours {
+    display: flex;
+    justify-content: center;
+    & ul {
+      & li {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        & h2 {
+          color: var(--clr-white);
+        }
+
+        & p {
+          color: var(--clr-white);
+        }
+      }
+    }
+  }
+
+  .cardsTour {
+    display: flex;
+    gap: 4em;
+    justify-content: center;
+
+    .cardOne {
+      .imgCardTours {
+        & img {
+          width: 200px;
+          border-radius: 0.2em;
+          border: 1px solid var(--clr-white-transparent);
+        }
+      }
+
+      .textCard {
+        & ul {
+          & li {
+            & h2 {}
+
+            & p {}
+          }
+        }
+      }
+    }
+
+    .cardTwo {
+      .imgCardTours {
+        & img {
+          width: 200px;
+          border-radius: 0.2em;
+          border: 1px solid var(--clr-white-transparent);
+        }
+      }
+
+      .textCard {
+        & ul {
+          & li {
+            & h2 {}
+
+            & p {}
+          }
+        }
+      }
+    }
+
+    .cardThree {
+      .imgCardTours {
+        & img {
+          width: 200px;
+          border-radius: 0.2em;
+          border: 1px solid var(--clr-white-transparent);
+        }
+      }
+
+      .textCard {
+        & ul {
+          & li {
+            & h2 {}
+
+            & p {}
+          }
+        }
+      }
+    }
+
+    .cardFour {
+      .imgCardTours {
+        & img {
+          width: 200px;
+          border-radius: 0.2em;
+          border: 1px solid var(--clr-white-transparent);
+        }
+      }
+
+      .textCard {
+        & ul {
+          & li {
+            & h2 {}
+
+            & p {}
+          }
+        }
+      }
+    }
+  }
+}
+
+/*#endregion tours*/
