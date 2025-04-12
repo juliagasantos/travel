@@ -366,8 +366,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
-  justify-content: space-around;
-  filter: brightness(50%);
+  justify-content: space-around; 
 
   .textNewWay {
     width: 400px;
