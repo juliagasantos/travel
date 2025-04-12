@@ -17,7 +17,7 @@
 }
 
 body {
-  background-image: url(../img/imgBg.jpg);
+  background-image: url('../img/home/imgBg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -84,7 +84,7 @@ header {
     height: 40vh;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 
     & ul {
       & li {
@@ -359,9 +359,23 @@ header {
 
 #newWayBanner {
   display: flex;
+  height: 100vh;
+  background:
+    linear-gradient(to bottom, var(--clr-gray-1), transparent),
+    url('../img/newWay/wpNewWay.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: space-around;
+  filter: brightness(50%);
+
   .textNewWay {
+    width: 400px;
     & ul {
       & li {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
 
         h1 {
           font-size: 50px;
@@ -374,6 +388,10 @@ header {
           align-items: center;
           gap: 1em;
           color: var(--clr-white);
+
+          .play {
+            font-size: 3em;
+          }
         }
 
         p {
@@ -384,15 +402,22 @@ header {
   }
 
   .videoContainer {
+    display: flex;
+    gap: 1em;
+
     .videoOne {
       & img {
-        width: 250px
+        width: 250px;
+        height: 150px;
+        object-fit: cover;
       }
     }
 
     .videoTwo {
       & img {
-        width: 250px
+        width: 250px;
+        height: 150px;
+        object-fit: cover;
       }
     }
   }
