@@ -16,6 +16,10 @@
   --clr-transparent: transparent;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url('../img/home/imgBg.jpg');
   background-repeat: no-repeat;
@@ -23,14 +27,23 @@ body {
   background-attachment: fixed;
 }
 
+
 /*#region header*/
 
 header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background: linear-gradient(to bottom, var(--clr-gray-1), var(--clr-transparent));
+
   & nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     height: 3em;
+    justify-content: space-around;
 
     .logo {
       display: flex;
@@ -79,12 +92,15 @@ header {
 #home {
   height: 90vh;
   background: linear-gradient(to top, var(--clr-gray-1), var(--clr-transparent), var(--clr-transparent));
+  flex-direction: column;
+  display: flex;
 
   .textHomeContainer {
-    height: 40vh;
+    flex-grow: 1;
     display: flex;
+    width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
     & ul {
       & li {
@@ -107,7 +123,7 @@ header {
   }
 
   .menuTab {
-    height: 45vh;
+    width: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
@@ -361,65 +377,127 @@ header {
   display: flex;
   height: 100vh;
   background:
+    linear-gradient(to top, var(--clr-gray-1), transparent),
     linear-gradient(to bottom, var(--clr-gray-1), transparent),
     url('../img/newWay/wpNewWay.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
-  justify-content: space-around; 
+  flex-direction: column;
 
-  .textNewWay {
-    width: 400px;
-    & ul {
-      & li {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5em;
+  .newWayContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 1;
+width: 100%;
+    .textNewWay {
+      width: 400px;
 
-        h1 {
-          font-size: 50px;
-          color: var(--clr-white);
-          font-weight: 600;
-        }
-
-        .videoPlay {
+      & ul {
+        & li {
           display: flex;
-          align-items: center;
-          gap: 1em;
-          color: var(--clr-white);
+          flex-direction: column;
+          gap: 1.5em;
 
-          .play {
-            font-size: 3em;
+          h1 {
+            font-size: 50px;
+            color: var(--clr-white);
+            font-weight: 600;
+          }
+
+          .videoPlay {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            color: var(--clr-white);
+
+            .play {
+              font-size: 3em;
+            }
+          }
+
+          p {
+            color: var(--clr-white);
           }
         }
+      }
+    }
 
-        p {
-          color: var(--clr-white);
+    .videoContainer {
+      display: flex;
+      gap: 1em;
+
+      .videoOne {
+        & img {
+          width: 250px;
+          height: 150px;
+          object-fit: cover;
+        }
+      }
+
+      .videoTwo {
+        & img {
+          width: 250px;
+          height: 150px;
+          object-fit: cover;
         }
       }
     }
   }
 
-  .videoContainer {
-    display: flex;
-    gap: 1em;
+  footer {
+    .socialMedia {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2em;
+      background: var(--clr-transparent);
+      height: 10vh;
+      justify-content: flex-end;
 
-    .videoOne {
-      & img {
-        width: 250px;
-        height: 150px;
-        object-fit: cover;
+      .int-icon {
+        & a {
+          & iconify-icon {
+            color: white;
+            font-size: 3em;
+
+          }
+        }
       }
-    }
 
-    .videoTwo {
-      & img {
-        width: 250px;
-        height: 150px;
-        object-fit: cover;
+      .yt-icon {
+        & a {
+          & iconify-icon {
+            color: white;
+            font-size: 3em;
+
+          }
+        }
+      }
+
+      .vk-icon {
+        & a {
+          & iconify-icon {
+            color: white;
+            font-size: 3em;
+
+          }
+        }
+      }
+
+      .fb-icon {
+        & a {
+          & iconify-icon {
+            color: white;
+            font-size: 3em;
+
+          }
+        }
       }
     }
   }
+
 }
 
 /*#endregion new way*/
