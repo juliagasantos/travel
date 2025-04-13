@@ -390,7 +390,8 @@ header {
     align-items: center;
     justify-content: space-evenly;
     flex-grow: 1;
-width: 100%;
+    width: 100%;
+
     .textNewWay {
       width: 400px;
 
